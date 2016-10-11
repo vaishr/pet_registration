@@ -51,7 +51,7 @@ public class RequestInput {
 			// Ask the user a question to get relative input
 			System.out.print(question + " (Yes/Y) or (No/N):");
 			// Set the input based on what the user enters on their keyboard
-			input = scanner.nextLine();
+			input = scanner.nextLine().trim();
 			// Check if the user has entered Yes
 			if (input.equalsIgnoreCase("Yes") || input.equalsIgnoreCase("Y")) {
 				// Return that the user has selected Yes so return true
@@ -86,7 +86,7 @@ public class RequestInput {
 				// Ask the user a question to get relative input
 				System.out.print(question);
 				// Set the input based on what the user enters on their keyboard
-				input = scanner.nextLine();
+				input = scanner.nextLine().trim();
 				// Check that the input String is one character long
 				if (input.length() < 1) {
 					System.out.println("UNDER:" + input.length());
@@ -153,7 +153,7 @@ public class RequestInput {
 				System.out.print(question);
 				// Set the number based on what the user enters on their
 				// keyboard
-				num = Double.parseDouble(scanner.nextLine());
+				num = Double.parseDouble(scanner.nextLine().trim());
 				// Break out of the infinite loop
 				break;
 			} catch (NumberFormatException e) {
@@ -183,7 +183,7 @@ public class RequestInput {
 				System.out.print(question);
 				// Set the number based on what the user enters on their
 				// keyboard
-				num = Integer.parseInt(scanner.nextLine());
+				num = Integer.parseInt(scanner.nextLine().trim());
 				// Break out of the infinite loop
 				break;
 			} catch (NumberFormatException e) {
@@ -210,7 +210,7 @@ public class RequestInput {
 		while (true) {
 			try {
 				System.out.print(question);
-				input = scanner.nextLine();
+				input = scanner.nextLine().trim();
 				resultValue = Integer.parseInt(input);
 
 				for (int i = 0; i < acceptableNumber.length; i++) {
@@ -282,7 +282,7 @@ public class RequestInput {
 		System.out.print(question);
 		// Set the number based on what the user enters on their
 		// keyboard
-		input = scanner.nextLine();
+		input = scanner.nextLine().trim();
 		// Return input user has entered
 		return input;
 	}
@@ -333,7 +333,7 @@ public class RequestInput {
 		while (true) {
 			try {
 				System.out.print(question);
-				input = scanner.nextLine();
+				input = scanner.nextLine().trim();
 				resultValue = input;
 
 				for (int i = 0; i < acceptableEnum.length; i++) {
@@ -361,7 +361,7 @@ public class RequestInput {
 				System.out.println(message);
 
 				System.out.println("If you would like to cancel, enter '*' or just press enter to continue:");
-				input = scanner.nextLine();
+				input = scanner.nextLine().trim();
 				if (input.equalsIgnoreCase("*")) {
 					return resultString;
 				}
