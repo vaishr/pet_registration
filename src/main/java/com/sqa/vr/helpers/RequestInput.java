@@ -34,7 +34,7 @@ import java.util.Scanner;
  *
  */
 public class RequestInput {
-	private static Scanner scanner = new Scanner(System.in);;
+	private static Scanner scanner = new Scanner(System.in);
 
 	/**
 	 * Static Helper Method which asks user specified question and as long as
