@@ -1,11 +1,8 @@
-#Java Project
 
-*Project for creating Java applications which do common tasks.*
+*Gathers pet registration info from user*
 
-**Java 7**
+**Dependencies**
 
 * Maven
 * Log4j
 * JUnit
-
-[Vaishnavi Reddy](https://github.com/vaishr)
